@@ -184,3 +184,6 @@ La API mostrará la salida de la predicción de TensorFlow y enviará el resulta
 Resultado Final: El NAO dirá el objeto detectado y dónde debe reciclarse (ejemplo: "He detectado plástico. Esto va en el contenedor amarillo."), completando el ciclo de identificación.
 
 Video de pruebas con el NAO: https://www.youtube.com/watch?v=rL4mmIgELGg
+
+Video explicativo: https://youtu.be/SiqsG58CE6g
+
