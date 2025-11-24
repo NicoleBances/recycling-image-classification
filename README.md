@@ -18,6 +18,7 @@ Para este entrenamiento, y debido al objetivo del proyecto, las imágenes se reo
 - non_recyclable
 - paper
 - plastic
+
 Para ello, se realizó lo siguiente:
 - Recolección de imágenes desde las carpetas default/ y real_world/.
 - Agrupación en las 6 clases finales según CLASS_MAP.
@@ -59,12 +60,14 @@ el accuracy disminuyó a 0.87 y el loss aumentó a 0.39.
 - Matriz de confusión:
 Los resultados obtenidos por la matriz, no indica que las clases con mayor confusión son paper y plastic, esto podría deberse a que encuentra similitudes en algunos casos.
 
-[[162   1   1   1   7   5]
- [  1 134   5   0   2  11]
- [  4   8 159   1   1   4]
- [  2   0   2 154  11   8]
- [  6   0   5  14 189   5]
- [  6  16  11   5   9 189]]
+```txt
+[[162 1 1 1 7 5]
+[ 1 134 5 0 2 11]
+[ 4 8 159 1 1 4]
+[ 2 0 2 154 11 8]
+[ 6 0 5 14 189 5]
+[ 6 16 11 5 9 189]]
+```
 
 
 - Métricas por clase:
