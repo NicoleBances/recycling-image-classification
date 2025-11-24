@@ -60,16 +60,12 @@ el accuracy disminuyó a 0.87 y el loss aumentó a 0.39.
 Los resultados obtenidos por la matriz, no indica que las clases con mayor confusión son paper y plastic, esto podría deberse a que encuentra similitudes en algunos casos.
 
 [[162   1   1   1   7   5]
-
  [  1 134   5   0   2  11]
- 
  [  4   8 159   1   1   4]
- 
  [  2   0   2 154  11   8]
- 
  [  6   0   5  14 189   5]
- 
  [  6  16  11   5   9 189]]
+
 
 - Métricas por clase:
                 precision    recall  f1-score   support
