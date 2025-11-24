@@ -1,6 +1,14 @@
 # recycling-image-classification
-Proyecto de clasificación de imágenes de desechos de reciclaje utilizando EfficientNet
 
+El objetivo de este proyecto es entrenar un modelo de visión por computadora que sea capaz de clasificar imágenes de residuos en seis categorías: biodegradable, glass, metal, non_recyclable, paper y plastic.
+
+Este sistema busca resolver la incorrecta separación de desechos, debido a que esto reduce la eficiencia de los procesos de reciclaje, aumenta los costos operativos, genera contaminación cruzada y
+evita la reusabilidad de materiales.
+
+Al automatizar la identificación de residuos, se facilita la clasificación precisa y rápida de materiales, la asistencia a sistemas robóticos como NAO en tareas de selección
+y la posibilidad de integrar la IA en flujos reales de gestión ambiental.
+
+En conjunto, este proyecto busca mejorar las prácticas de reciclaje, promover una gestión sostenible de residuos y demostrar cómo el aprendizaje profundo puede aplicarse a problemas medioambientales reales.
 
 ## 1. Dataset
 Se utilizó el Recyclable and Household Waste Classification Dataset, el cual contiene 15,000 imágenes organizadas en 30 categorías de residuos. Cada categoría incluye 500 imágenes, divididas equitativamente en dos tipos:
