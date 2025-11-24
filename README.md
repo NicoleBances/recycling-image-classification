@@ -57,7 +57,8 @@ Durante el entrenamiento, el modelo mostró una mejora progresiva del accuracy, 
 Asimismos el train loss disminuyó llegando a valores inferiores a 0.06, lo que evidencia la capacidad del modelo para aprender del dataset. Sin embargo, al realizar la evaluación del modelo
 el accuracy disminuyó a 0.87 y el loss aumentó a 0.39. 
 
-- Matriz de confusión:
+Matriz de confusión:
+
 Los resultados obtenidos por la matriz, no indica que las clases con mayor confusión son paper y plastic, esto podría deberse a que encuentra similitudes en algunos casos.
 
 ```txt
@@ -70,7 +71,8 @@ Los resultados obtenidos por la matriz, no indica que las clases con mayor confu
 ```
 
 
-- Métricas por clase:
+Métricas por clase:
+
 ```txt
                 precision    recall  f1-score   support
 
@@ -80,6 +82,7 @@ Los resultados obtenidos por la matriz, no indica que las clases con mayor confu
 non_recyclable       0.88      0.87      0.88       177
          paper       0.86      0.86      0.86       219
        plastic       0.85      0.80      0.83       236
+
       accuracy                           0.87      1139
      macro avg       0.87      0.87      0.87      1139
   weighted avg       0.87      0.87      0.87      1139
