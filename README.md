@@ -21,7 +21,7 @@ Para este entrenamiento, y debido al objetivo del proyecto, las imágenes se reo
 
 Para ello, se realizó lo siguiente:
 - Recolección de imágenes desde las carpetas default/ y real_world/.
-- Agrupación en las 6 clases finales según CLASS_MAP.
+- Agrupación en las 6 clases finales utilizando CLASS_MAP.
 - División en train (70%), validation (15%), test (15%) usando train_test_split.
 - Reorganización física de todas las imágenes en las carpetas correspondientes.
 
@@ -59,8 +59,6 @@ el accuracy disminuyó a 0.87 y el loss aumentó a 0.39.
 
 Matriz de confusión:
 
-Los resultados obtenidos por la matriz, no indica que las clases con mayor confusión son paper y plastic, esto podría deberse a que encuentra similitudes en algunos casos.
-
 ```txt
 [[162 1 1 1 7 5]
 [ 1 134 5 0 2 11]
@@ -69,6 +67,9 @@ Los resultados obtenidos por la matriz, no indica que las clases con mayor confu
 [ 6 0 5 14 189 5]
 [ 6 16 11 5 9 189]]
 ```
+- Las clases paper, metal y biodegradable muestran una cantidad alta de aciertos (189, 159 y 162 respectivamente) y pocos errores, indicando que el modelo ha aprendido patrones visuales claros para estas categorías.
+- La clase plastic es la que presenta mayor confución, especialmente con glass (16), metal (11) y paper (9).
+- Algunas clases tienden a confundirse entre sí debido a similitudes entre ellas. Como paper con non_recyclable (14 errores), glass con plastic (11 errores) y metal con glass (8 errores).
 
 
 Métricas por clase:
@@ -90,6 +91,7 @@ non_recyclable       0.88      0.87      0.88       177
 
   - Las clases biodegradable y metal presentan el f1-score y recall más altos, lo que indica que el modelo tiene alta capacidad para reconocer este tipo de residuo.
   - La clase plastic es muestra el rendimiento más bajo, esto se debe principalmente a que encuentra similitudes con categorías como glass y paper.
+  - El desempeño general del modelo es consistente y mantiene un rendimiento equilibrado entre clases. Esto indica que el modelo generaliza de forma equilibrada entre todas las categorías.
 
 ## 8. Implementación en el NAO
 
