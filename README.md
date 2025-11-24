@@ -71,6 +71,7 @@ Los resultados obtenidos por la matriz, no indica que las clases con mayor confu
 
 
 - Métricas por clase:
+```txt
                 precision    recall  f1-score   support
 
  biodegradable       0.90      0.92      0.91       177
@@ -82,6 +83,7 @@ non_recyclable       0.88      0.87      0.88       177
       accuracy                           0.87      1139
      macro avg       0.87      0.87      0.87      1139
   weighted avg       0.87      0.87      0.87      1139
+```
 
   - Las clases biodegradable y metal presentan el f1-score y recall más altos, lo que indica que el modelo tiene alta capacidad para reconocer este tipo de residuo.
   - La clase plastic es muestra el rendimiento más bajo, esto se debe principalmente a que encuentra similitudes con categorías como glass y paper.
